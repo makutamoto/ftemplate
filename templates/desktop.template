@@ -1,0 +1,43 @@
+"template to create a desktop entry."
+type: ["Application", "Link", "Directory"] ; Entry type.
+name: "My app" ; Application name.
+genericName: "" ; Application's generic name.
+noDisplay: ["false", "true"] ; Set true if you want this entry to be hidden in the menu.
+comment: "" ; Comment for application.
+icon: "" ; icon path.
+hidden: ["false", "true"] ; icon is hidden.
+dbusActivatable: ["false", "true"]
+tryExec: "" ; a file to determine whether the apllication is installed.
+exec: "" ; an executable's path.
+path: "" ; working directory.
+terminal: ["false", "true"]
+actions: ""
+mimeType: ""
+categories: ""
+implements: ""
+keywords: ""
+startupNotify: ["true", "false"]
+startupWMClass: ""
+url: ""
+-----
+[Desktop Entry]
+Type=$:(type)
+Name=$:(name)
+GenericName=$:(genericName)
+NoDisplay=$:(noDisplay)
+Comment=$:(comment)
+Icon=$:(icon)
+Hidden=$:(hidden)
+DBusActivatable=$:(dbusActivatable)
+TryExec=$:(tryExec)
+Exec=$:(exec)
+Path=$:(path)
+Terminal=$:(terminal)
+Actions=$:(actions)
+MimeType=$:(mimeType)
+Categories=$:(categories)
+Implements=$:(implements)
+Keywords=$:(keywords)
+StartupNotify=$:(startupNotify)
+StartupWMClass=$:(startupWMClass)
+URL=$:(url)
